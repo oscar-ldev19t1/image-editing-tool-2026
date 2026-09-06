@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-editing-tool-2026"
+version = "0.1.0"
+description = "A Python-based application for standard image manipulation tasks. Designed for users requiring basic editing capabilities without commercial software licensing. Includes a module for automated batch r"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "oscar-ldev19t1" }]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+image_editing_tool_2026 = "image_editing_tool_2026.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
